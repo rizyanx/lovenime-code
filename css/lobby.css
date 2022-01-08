@@ -1,0 +1,118 @@
+@font-face {
+	font-family: Poppins-Regular;
+	src: url('../fonts/poppins/Poppins-Regular.ttf');
+}
+
+@font-face {
+	font-family: Poppins-Medium;
+	src: url('../fonts/poppins/Poppins-Medium.ttf');
+}
+
+@font-face {
+	font-family: Poppins-Bold;
+	src: url('../fonts/poppins/Poppins-Bold.ttf');
+}
+
+@font-face {
+	font-family: Poppins-SemiBold;
+	src: url('../fonts/poppins/Poppins-SemiBold.ttf');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Tamma+2:wght@800&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html,
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+
+.container {
+	background-image: url('../img/image-2.jpg');
+	background-size: cover;
+	background-position: left;
+	background-color: #000000;
+	position: absolute;
+	z-index: 1;
+	height: 100%;
+	width: 100%;
+	min-height: 100vh;
+}
+
+.container::before {
+	background-color: rgba(0, 0, 0, .5);
+	content: "";
+	display: block;
+	position: absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+}
+
+.limiter-box {
+	position: fixed;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+.main-box {
+	margin: 0 auto;
+	padding: 25px 0 30px 0;
+	border-radius: 25px;
+	text-align: center;
+}
+
+.text-post {
+	animation: blinker 3s linear;
+	text-align: center;
+	color: #FFFFFF;
+	font-size: 40px;
+	text-shadow: -1px -1px 0px #5DADE2, 3px 3px 0px #1B4F72, 6px 6px 0px #1B2631;
+	font-family: 'Baloo Tamma 2', cursive;
+	filter: alpha(opacity=70);
+	opacity: .7;
+}
+
+.button-post input[type=submit] {
+	background-color: #5DADE2;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	padding: 10px 20px 10px 20px;
+	text-align: center;
+	width: 200px;
+	filter: alpha(opacity=50);
+	color: #000000;
+	opacity: .5;
+	font-family: Poppins-SemiBold;
+	transition: all 0.3s;
+	animation: blinker 3s linear;
+}
+
+.button-post input[type=submit]:hover {
+	filter: alpha(opacity=70);
+	opacity: .7;
+	background-color: #1B4F72;
+	color: #FFFFFF;
+	font-family: Poppins-Medium;
+}
+
+@keyframes blinker {
+	0% {
+		opacity: 0.0;
+	}
+}
