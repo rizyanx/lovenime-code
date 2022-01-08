@@ -1,2 +1,1 @@
-# lovenime-code
-Anime, Love, Fun Website.
+Lovenime Code is a project created by Rizyanx, the Lovenime Project is a website for fun and is very suitable if the person visiting the website is in love with someone, because the Lovenime Project website is a website that contains elements of romance with an anime theme.
